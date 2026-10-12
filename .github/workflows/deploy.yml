@@ -1,4 +1,4 @@
-name: nginx-depploy
+name: nginx-deploy
 on: [push]
 jobs:
   build:
