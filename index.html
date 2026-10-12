@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Saffron & Sage, a modern fine dining experience with unforgettable flavours.">
+  <title>Saffron & Sage | Fine Dining</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">S<span>&</span>SAGE<span class="logo-dot">.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav-cta">Reserve a Table ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">A MODERN CULINARY EXPERIENCE</p>
+        <h1>Flavours that<br>tell a <em>story.</em></h1>
+        <p class="hero-description">
+          Thoughtfully crafted dishes, unforgettable moments,
+          and a dining experience worth remembering.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-gold">Explore Our Menu ↗</a>
+          <a href="#story" class="text-link">Discover our story ↓</a>
+        </div>
+        <div class="hero-note">
+          <span class="gold-line"></span>
+          FRESH INGREDIENTS · TIMELESS FLAVOURS
+        </div>
+      </div>
+      <div class="hero-index">01 / SIGNATURE DINING</div>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="intro-image reveal">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+          alt="Elegant restaurant dining table">
+        <div class="image-label">Made with passion. Served with love.</div>
+      </div>
+      <div class="intro-copy reveal">
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+        <h2>More than a meal.<br><em>A memory.</em></h2>
+        <p>
+          At Saffron & Sage, every plate is an expression of creativity,
+          quality, and our love for exceptional food. We bring seasonal
+          ingredients and thoughtful techniques together to create
+          something truly special.
+        </p>
+        <p>
+          From the first welcome to the final bite, we believe the
+          smallest details make the biggest difference.
+        </p>
+        <a href="#experience" class="text-link dark-link">The Saffron experience ↗</a>
+        <div class="signature">Crafted with care <span>✳</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A TASTE OF SOMETHING SPECIAL</p>
+        <h2>Our signature <em>menu.</em></h2>
+        <p>Seasonal ingredients. Bold flavours. Beautifully presented.</p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All dishes</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="mains">Main course</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="dish-card reveal" data-category="starters">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Fresh garden salad" loading="lazy">
+            <span class="dish-number">01</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Garden Symphony</h3><span>₹349</span></div>
+            <p>Seasonal greens, roasted nuts, citrus dressing.</p>
+            <span class="dish-tag">STARTER</span>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" data-category="mains">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80" alt="Beautifully plated gourmet main course" loading="lazy">
+            <span class="dish-number">02</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Chef's Signature</h3><span>₹649</span></div>
+            <p>A chef-inspired plate with rich, layered flavours.</p>
+            <span class="dish-tag">MAIN COURSE</span>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" data-category="desserts">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Rich chocolate celebration cake" loading="lazy">
+            <span class="dish-number">03</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Chocolate Indulgence</h3><span>₹299</span></div>
+            <p>Decadent chocolate cake with a silky finish.</p>
+            <span class="dish-tag">DESSERT</span>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" data-category="starters">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=700&q=80" alt="Gourmet starter served on a plate" loading="lazy">
+            <span class="dish-number">04</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Golden Bites</h3><span>₹279</span></div>
+            <p>Crispy, flavourful bites with our house-made dip.</p>
+            <span class="dish-tag">STARTER</span>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" data-category="mains">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80" alt="Freshly prepared pasta" loading="lazy">
+            <span class="dish-number">05</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Garden Pesto Pasta</h3><span>₹499</span></div>
+            <p>Fresh herbs, parmesan, and a vibrant pesto sauce.</p>
+            <span class="dish-tag">MAIN COURSE</span>
+          </div>
+        </article>
+
+        <article class="dish-card reveal" data-category="desserts">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Creamy dessert with fresh berries" loading="lazy">
+            <span class="dish-number">06</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-title"><h3>Berry Bliss</h3><span>₹269</span></div>
+            <p>Velvety cream and fresh berries in every spoonful.</p>
+            <span class="dish-tag">DESSERT</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu-note">Sample menu for this demo website. Prices and dishes are illustrative.</p>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-image"></div>
+      <div class="experience-content reveal">
+        <p class="eyebrow">AN EVENING TO REMEMBER</p>
+        <h2>Good food.<br>Great company.<br><em>Beautiful moments.</em></h2>
+        <p>
+          Celebrate life's little moments in a space designed for
+          connection, conversation, and exceptional dining.
+        </p>
+        <a href="#contact" class="btn btn-gold">Plan Your Visit ↗</a>
+      </div>
+    </section>
+
+    <section class="reservation section-pad" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">YOUR TABLE IS WAITING</p>
+        <h2>Make it <em>special.</em></h2>
+        <p>Tell us a little about your visit.</p>
+      </div>
+
+      <form id="reservationForm" class="reservation-form">
+        <div class="form-field">
+          <label for="guestName">Your name</label>
+          <input type="text" id="guestName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-field">
+          <label for="guestEmail">Email address</label>
+          <input type="email" id="guestEmail" placeholder="you@example.com" required>
+        </div>
+        <div class="form-field">
+          <label for="visitDate">Date</label>
+          <input type="date" id="visitDate" required>
+        </div>
+        <div class="form-field">
+          <label for="guestCount">Guests</label>
+          <select id="guestCount" required>
+            <option value="2">2 guests</option>
+            <option value="1">1 guest</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6">6 guests</option>
+          </select>
+        </div>
+        <div class="form-field full-width">
+          <label for="visitTime">Preferred time</label>
+          <select id="visitTime" required>
+            <option value="">Select a time</option>
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>6:00 PM</option>
+            <option>7:00 PM</option>
+            <option>8:00 PM</option>
+            <option>9:00 PM</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold full-width">Request a Reservation ↗</button>
+        <p class="form-message full-width" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+      <p class="form-note">Demo only: reservations are not sent to a restaurant.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">S<span>&</span>SAGE<span class="logo-dot">.</span></a>
+    <p>Thoughtful food. Meaningful moments.</p>
+    <div class="footer-links">
+      <a href="#story">Our story</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Saffron & Sage. Built with passion.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
